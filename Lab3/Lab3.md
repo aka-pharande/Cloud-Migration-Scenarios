@@ -5,7 +5,7 @@ The technical architecture diagram illustrates the on-premises infrastructure of
 
 # Section 2: Migration Strategies
 
-## Web Application Migration to Azure Virtual Machine (IaaS)
+## 1. Web Application - Migration to Azure Virtual Machine (IaaS)
 For migrating the web application, I will use the Lift and Shift strategy to move it to Azure Virtual Machines (VMs) under Azure's IaaS model. This approach will let me move the application with minimal changes while keeping full control over the environment.
 
 ### Migration Steps:
@@ -19,7 +19,7 @@ For migrating the web application, I will use the Lift and Shift strategy to mov
 2. Full Control: More control and flexibility over the infrastructure for updates and configurations.
 3. Quick Adoption: Rapid cloud integration without extensive rework, saving time and costs.
 
-## Database Migration to Azure SQL Database (PaaS)
+## 2. Database - Migration to Azure SQL Database (PaaS)
 For migrating the database, I will use the Azure SQL Database service, a fully managed relational database in Azure. This will involve making adjustments to the database schema and configurations to leverage Azure’s features.
 
 ### Migration Steps:
@@ -34,7 +34,7 @@ For migrating the database, I will use the Azure SQL Database service, a fully m
 3. Scalability: Easy adjustments for growing business needs.
 4. High Availability: Built-in features ensure accessibility and security.
 
-## File Storage Migration to Azure File Share via Azure Storage Account (PaaS)
+## 3. File Storage - Migration to Azure File Share via Azure Storage Account (PaaS)
 For migrating file storage, I will use the Refactor strategy by transitioning to Azure File Share, part of an Azure Storage Account.
 
 ### Migration Steps:
@@ -50,7 +50,7 @@ For migrating file storage, I will use the Refactor strategy by transitioning to
 3. Easy Access: Files can be accessed remotely.
 4. Managed Service: Fully managed by Azure, reducing infrastructure maintenance.
 
-## Networking Migration to Azure Cloud-Native Networking (IaaS)
+## 4. Networking - Migration to Azure Cloud-Native Networking (IaaS)
 For the networking component, we will utilize Azure's cloud-native networking solutions.
 
 ### Migration Steps:
@@ -67,7 +67,7 @@ For the networking component, we will utilize Azure's cloud-native networking so
 3. Improved Security: Utilize NSGs and private endpoints for enhanced security.
 4. Scalability: Easily scale networking services for increased traffic needs.
 
-## Email Service Migration to Microsoft 365 (SaaS)
+## 5. Email Service - Migration to Microsoft 365 (SaaS)
 For the email service migration, I will use Microsoft 365.
 
 ### Migration Steps:
