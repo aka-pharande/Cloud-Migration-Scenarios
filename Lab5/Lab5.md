@@ -1,7 +1,7 @@
-
+# Technical Architecture Diagram
 ![Cloud Technical Architecture Diagram](Technical_diagram.png)
 
-# Overview of Technical Architecture Diagram
+# Overview
 The existing on-premise application will be rehosted to AWS with minimal changes using a Lift-and-Shift approach. 
 The cloud-native architecture proposed uses AWS services to ensure scalability, high availability, and disaster recovery. The frontend tier consists of EC2 instances running in multiple Availability Zones (AZs) behind an Application Load Balancer (ALB). The ALB distributes incoming traffic evenly across the EC2 instances in different AZs, providing fault tolerance in case of an AZ failure. The backend tier includes EC2 instances running the API servers, which are part of an auto-scaling group to handle varying loads. These instances are also distributed across multiple AZs and sit behind a elastic load balancer (ELB) to ensure even traffic distribution and failover. For the database tier, Amazon Aurora is used, providing a fully managed, highly available, and auto-scaling SQL database. Aurora ensures data is automatically replicated across multiple AZs for redundancy, ensuring data consistency and availability. All components are hosted within a Virtual Private Cloud (VPC) with subnets in two AZs, and security groups protect the different tiers by controlling traffic flow between them.
 
