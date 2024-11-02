@@ -1,11 +1,11 @@
 # 1. Cost Estimate Report
 
-The GCP pricing calculator was used to generate this cost report. Here's a link to a [pricing estimate](https://cloud.google.com/products/calculator/?hl=en&dl=CjhDaVE1WmpsaFl6RTRNeTAyWkRRekxUUmhaR0V0T1dFM05pMDVNek5oTkRZeU9UUmhaakVRQVE9PRAIGiREMzQ4QTdFQy0yMzc0LTQ4RUItQTg1Ny00QkMzOUVERkI5RDY). 
+The GCP pricing calculator was used to generate this cost report. Here's a link to the [pricing estimate](https://cloud.google.com/products/calculator/?hl=en&dl=CjhDaVE1WmpsaFl6RTRNeTAyWkRRekxUUmhaR0V0T1dFM05pMDVNek5oTkRZeU9UUmhaakVRQVE9PRAIGiREMzQ4QTdFQy0yMzc0LTQ4RUItQTg1Ny00QkMzOUVERkI5RDY). 
 
 ## 1.1 Operational Cost Estimation
 ### Web Front-End Cluster
-- **Virtual machines:** 10 virtual machines will be deployed accross three regions: US-Central, Europe-London, and Mumbai.
-Following is the detialed cost breakdown for each region along with the different pricing models.
+- **Virtual machines:** 10 virtual machines will be deployed across three regions: US-Central, Europe-London, and Mumbai.
+Following is the detailed cost breakdown for each region along with the different pricing models.
 
 | Region        | Pay-As-You-Go        | Sustained Use Discount | 1-Year Commitment   | 3-Year Commitment   |
 |---------------|----------------------|-------------------------|---------------------|---------------------|
@@ -31,7 +31,7 @@ pay-as-you-go, sustained use discounts, and committed use discount options.
 ### Payment Processing
 
 - **Virtual machines:** 2 virtual machines will be required per region to securely handle customer payment data. 
-These VMs will be configured to meet PCI complaince and provide data encryption at transit and at rest. 
+These VMs will be configured to meet PCI compliance and provide data encryption at transit and at rest. 
 The table below provides the monthly pricing for the VMs.
 
 
@@ -88,11 +88,11 @@ As per the [Google Cloud SQL pricing documentation](https://cloud.google.com/sql
 - **Trace Spans and Uptime Checks:** Estimated at $488.40/month for 5-minute intervals across all regions.
 
 ## 1.3 Migration Cost Estimation
-The migration costs are a one time expenditure required for data transfer, database replication, and temporary migration
+The migration costs are a one-time expenditure required for data transfer, database replication, and temporary migration
 resources. In fact, if the migration is homogenous i.e. where the source and destination are on the same database engine, it wouldn't cost anything at all.
-However, if it ends up being a hetrogenous move, it will cost $0.463/GB to backfill the data. 
-Given we have to migrate 30 TB of data, in thw worst case (heterogenous move), we will incur a one time cost of $14223.36 to migrate the data to Cloud databases.
-More information of the database migration service pricing can be found [here](https://cloud.google.com/database-migration/pricing).
+However, if it ends up being a heterogenous move, it will cost $0.463/GB to backfill the data. 
+Given we have to migrate 30 TB of data, in the worst case (heterogenous move), we will incur a one-time cost of $14223.36 to migrate the data to Cloud databases.
+More information on the database migration service pricing can be found [here](https://cloud.google.com/database-migration/pricing).
 
 # 2. Cost Optimization Strategy
 **Reserved Instances vs. Pay-As-You-Go** 
@@ -120,9 +120,9 @@ The table below highlights monthly cost differences for a sample component, comp
 ## 3-Year Cost Projection and Adjustments
 
 ### Projected Growth
-A 10-15% increase in usage each year can be expected. Which means that more virtual machines, databases, and storage will be needed, which will increase the costs.
+A 10-15% increase in usage each year can be expected. This means that more virtual machines, databases, and storage will be needed, which will increase the costs.
 
 ### Strategic Adjustments
 - **Newer Instance Types**: Upgrade to the latest, more cost-effective virtual machines to save money.
-- **Serverless Services**: Move some non-critical tasks to serverless solutions to lower the computing costs.
+- **Serverless Services**: Move some non-critical tasks to serverless solutions to lower computing costs.
 - **Multi-Year Commitments**: Where possible, extend the commitments to 3 years to save even more on costs.
