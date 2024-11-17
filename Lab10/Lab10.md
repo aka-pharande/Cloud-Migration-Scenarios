@@ -13,6 +13,7 @@ In this milestone, we set up two virtual machines (VMs) in **VMware Workstation 
 ![](Screenshots/1-1.png)
 ![](Screenshots/1-2.png)
 ![](Screenshots/1-3.png)
+![](Screenshots/1-4.png)
 
 ## Milestone 3: Application Deployment
 To verify the setup, we installed **IIS (Internet Information Services)** on **VM1** (Windows Server 2022).
